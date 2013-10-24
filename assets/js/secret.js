@@ -1,11 +1,11 @@
 var localStorage = window.localStorage || {};
 
-localStorage.selectList = locaStorage['selectList'] || JSON.stringify({
+localStorage.selectList = localStorage['selectList'] || JSON.stringify({
 	'facebook':'facebook',
 	'twitter':'twitter'
 });
 
-localStorage.questionList = locaStorage['questionList'] || JSON.stringify({
+localStorage.questionList = localStorage['questionList'] || JSON.stringify({
 	
 });
 

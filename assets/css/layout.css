@@ -1,0 +1,312 @@
+*{box-sizing:border-box}
+body{  
+background: rgba(226, 226, 226, 1);
+width:100%; 
+height:100%;
+min-width: 600px;
+}
+
+.cover{max-width:1200px;min-width:400px;margin:0px auto;width:100%}
+#menu{position:relative;border-bottom:1px solid rgba(0,0,0,0.2);background:rgba(0,0,0,0.1)}#menu h1#logo a{font-family:Impact}#menu h1#logo a span{vertical-align:bottom;font-family:"Tamil Sangam MN";font-weight:bold}
+#menu nav#menulinks ul{display:block}#menu nav#menulinks ul li{display:inline-block;text-align:center}#menu nav#menulinks ul li a{font-family:"Tamil Sangam";font-weight:bold}
+#content{position:relative}#content .qo{position:relative;background:rgba(0,0,0,0.3);padding:3px;margin:7px auto}
+#content #pos{position:absolute;width:15px;height:100%;top:0;font-family:impact;text-align:center;color:#fff}
+@media screen and (min-width:600px) and (max-width:1200px),(min-width:1200px){#menu{padding:3px}#menu h1#logo{font-size:1em;margin-left:5px}#menu h1#logo a span{font-size:3em} #menu nav#menulinks{position:absolute;height:100%;right:2%;top:20%}#menu nav#menulinks ul li{height:100%;margin-left:10px;font-size:1.5em} #content .qo{width:95%;height:85px}#content .qo #ask,#content .qo #options{height:100%;display:inline-block} #content .qo #ask{vertical-align:top;width:80%;padding:5px 0px 5px 30px} #content .qo #options{width:16%}}
+@media screen and (min-width:320px) and (max-width:600px){#menu{padding:3px;height:150px}#menu h1#logo{height:60px;font-size:1em;margin:1px auto;text-align:center;border-bottom:1px solid rgba(0,0,0,0.2)}#menu h1#logo a span{font-size:3em} #menu nav#menulinks{position:relative;height:100%}#menu nav#menulinks ul li:first-child{border-bottom:1px solid rgba(0,0,0,0.2)} #menu nav#menulinks ul li{display:block;height:40px;width:100%;font-size:1.5em;text-align:center;padding:4px 0px} #content .qo{width:99%}#content .qo #ask,#content .qo #options{padding:0px 0px 0px 20px}}
+
+
+#wall{
+  width: 100%;
+  height:100%;
+  position: fixed;
+  top:0px;
+  left:0px;
+  background:  rgba(0,0,0,0.7);
+  z-index: 20000;
+}
+
+
+#panel{
+  position: relative;
+  padding: 10px;
+  margin: 10px auto;
+  width:70%;
+  height:90%;
+  background: rgba(255,255,255,1);
+}
+
+#panel #case{
+  border: 1px solid rgba(0,0,0,0.2);
+  padding:10px;
+}
+
+#panel #case p{
+  margin: 7px 0px;
+}
+
+#panel #case p select,#panel #case p input,#panel #case p ul{
+  margin: 0px 50px 0px 0px;
+}
+
+#panel #case p label{
+  margin: 0px 5px;
+}
+
+#close{
+ width: 20px;
+ height:20px;
+ padding:10px;
+ margin-top: 10px;
+ font-family: impact;
+ font-size: 20px;
+ background: rgba(255,255,255,0.8);
+}
+
+#close a{
+  color: red;
+  font-weight: bold;
+  font-family:impact;
+}
+
+.hide{
+  display: none;
+}
+
+.show{
+  display: block;
+}
+
+.ghost{
+  visibility: hidden;
+}
+
+
+.logo{
+  width: 100%;
+  height: 100%;
+}
+
+.red{
+  background: rgba(250, 28, 28, 0.79);
+}
+
+.orange{
+  background:rgba(250, 81, 28, 0.79);
+}
+
+.lightblue{
+  background: rgba(54, 148, 250, 0.82);
+}
+
+.lightgreen{
+  background: rgba(132, 250, 54, 0.79);
+}
+.pink{
+  background: rgba(181, 23, 231, 1);
+}
+.blue{
+  background: rgba(0, 105, 238, 1);
+}
+.purple{
+  background: rgba(238, 0, 114, 1);
+}
+.grassgreen{
+  background: rgba(120, 170, 15, 1);
+}
+
+#qp .qo{
+  background: rgba(216, 216, 216, 1);
+  border: 1px solid rgba(44, 88, 122, 0.1)
+}
+
+#menu{
+  background: none;
+  border: none;
+  margin-bottom: 10px;
+}
+
+#menulinks ul li a{
+  color: rgba(0,0,0,1);
+}
+
+#menulinks ul li:hover{
+  border-bottom: 3px solid rgba(177, 28, 28, 1);
+}
+
+#menulinks ul li:hover a{
+  color: rgba(177, 28, 28, 1);
+}
+
+#graph{
+  background: rgba(194, 202, 0, 1);
+  background: rgba(216, 216, 216, 0.47);
+  overflow: hidden;
+  border-top:1px solid rgba(60,60,60,0.1);
+  /*border-top:2px solid rgba(43, 159, 250, 1);*/
+  border-bottom:2px solid rgba(43, 159, 250, 0.8);
+}
+
+#gengraph{
+  background: rgba(43, 159, 250, 1);
+  width: 160px;
+  height: 30px;
+  padding: 5px;
+  padding-left: 10px;
+  cursor: pointer;
+  box-shadow: 0px 1px 3px rgba(0,0,0,0.7);
+}
+
+#gengraph:hover{
+  color: rgba(255,255,255,1);
+}
+
+#content .qo #ask,#content .qo #options{padding:0px 0px 0px 20px}
+
+
+.actionView {
+  position: relative !important;
+  height:60% !important;
+}
+
+.actionView p#itemcase label{
+  font-weight: bold;
+}
+
+.actionView p#itemcase input{
+  width: 70%;
+  height: 30px;
+  padding-left: 5px;
+  margin:5px 10px !important;
+}
+
+.actionView div.addOption{
+  width: 90%;
+  height:30px;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.actionView div.addOption div{
+    display: inline-block;
+}
+
+.actionView  div.addOption div.inputCover{
+  position: relative !important;
+  width: 45%;
+  height: 100%;
+}
+
+.actionView  div.addOption div#addsubmit{
+  vertical-align: top;
+  position: absolute;
+  top: 0px;
+  right:0px;
+  height: 100%;
+  width: 8.5%;
+  padding: 2px 1px;
+}
+
+.actionView  div.addOption div.inputCover span,.actionView  div.addOption div.inputCover input{
+  position: absolute;
+  top: 0px;
+}
+
+.actionView  div.addOption div.inputCover span{
+  padding: 5px;
+  color: rgba(60,60,60,0.2);
+  z-index: 1000;
+}
+
+.actionView  div.addOption div.inputCover input{
+  width: 100%;
+  height: 100%;
+  padding-left: 5px;
+}
+
+.actionView p#submit{
+  width: 30%;
+  padding:5px;
+  position: absolute;
+  right:10px;
+  margin-top: -5px !important;
+}
+
+.actionView #destroyButton:hover{
+  color: red;
+}
+
+#itemContent section.data{
+  margin-left: 10px;
+  background: rgba(60,60,60,0.3);
+  position: relative;
+  width: 90%;
+  height:30px;
+  margin-top: 3px;
+  padding: 5px;
+}
+
+#itemContent section.data span#destroyButton{
+  background: none;
+  border:none;
+  position: absolute;
+  right: 10px;
+  top:5px;
+  width:10%; 
+  font-size: 0.9em;
+  margin-left:10px;
+}
+
+#graphview{
+  width: 100%;
+  height:450px;
+}
+
+#graphview canvas{
+  width: 100%;
+  height:95%;
+  border-radius: none;
+  position: relative;
+}
+
+#graphview ul#graphmenu{
+  display: block;
+}
+
+#graphview #graphmenu li{
+  width: 120px;
+  display: list-item;
+  font-size: 1em;
+  text-shadow:0px 1px 1px rgba(0,0,0,0.6);
+  font-style: italic;
+  font-weight: bold;
+  padding: 3px;
+  background: rgba(60,60,60,0.4);
+  color: #fff;
+  border:0;
+  text-align: center;
+  cursor: pointer;
+}
+
+#graphview #graphmenu li:hover{
+  background: rgba(250, 28, 28, 0.6);
+  color: rgba(0,0,0,0.9);
+  text-shadow:0px 1px 0px rgba(255,255,255,0.5);
+}
+
+.barGraph{
+  position: absolute;
+  bottom: 28px;
+  left: 25%;
+  width: 350px;
+}
+
+.barGraph ul{
+  border:1px solid rgba(16, 149, 253, 0.8);
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.barGraph ul li{
+    background: rgba(16, 149, 253, 0.4);
+}

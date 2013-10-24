@@ -1,0 +1,239 @@
+body{
+  background: rgba(226, 226, 226, 1);
+  margin: 0px auto;
+}
+
+.plane{
+  width: 100%;
+  height:100%;
+  position: absolute;
+  top:0px;
+  left:0px;
+  background: rgba(226, 226, 226, 1);
+  z-index: 20000;
+}
+
+#admin{
+  background: rgba(226, 226, 226, 1);
+}
+
+#admin,#qlist{
+  min-width: 400px;
+  width: 100%;
+  height:100%;
+  max-width: 1200px
+  margin: 0px auto;
+}
+
+.boundedCover{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.centered{
+	position: absolute;
+	left:40%;
+	top:40%;
+}
+
+#divCover{
+  width: 25%;
+  top:50%;
+}
+
+#divCover label#intro{
+  font-style: italic;
+  font-weight: bold;
+  font-family: sans-serif;
+  margin:5px 0px;
+  display: block;
+  font-size: 0.86em;
+  color: rgba(60,60,60,1);
+}
+
+#placeholder{
+  position: absolute;
+  top:0px;
+  left:0px;
+  font-size: 1.2em;
+  padding: 15px 7px;
+  /*border: 1px solid rgba(0,0,0,0.1);*/
+  color: rgba(60,60,60,0.3);
+/*  color: rgba(255,255,255,1);
+  background: rgba(75, 144, 219, 1);*/
+  height: 100%;
+  z-index: 10000;
+
+}
+
+#inputElem{
+  width: 100%;
+  height:100%;
+  font-size: 2em;
+  padding-left:3px;
+  color: rgba(60,60,60,1);
+  z-index: 10;
+}
+
+#inputCover{
+  height:60px;
+}
+
+#pinsubmit{
+  width: 20%;
+  font-size: 3em;
+  position: absolute;
+  top:0px;
+  right: 0px;
+  border: none;
+  height: 60px;
+  line-height: 50px;
+  /*color: #fff;*/
+}
+
+#pinsubmit:hover{
+  border:1px solid rgba(0,0,0,0.3);
+  width: 20%;
+  /*color: #000;*/
+  line-height: 50px;
+  font-size: 3em;
+}
+
+#pinsubmit:active{
+   background:rgba(250, 81, 28, 0.79);
+   color:#fff;
+}
+
+#selectListCover{
+  width: 80%;
+  height:90%;
+  margin: 0px auto !important;
+  position: relative;
+}
+
+#selectList{
+  padding: 20px;
+}
+
+#selectList h1{
+  font-size: 2.5em;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#qselectElem{
+  display: block;
+  position: relative;
+  /*border: 1px solid rgba(0,0,0,0.4);*/
+  height: 95%;
+}
+
+#qselectElem li{
+  border: 1px solid rgba(0,0,0,0.1);
+  width: 100%;
+  height: 50px;
+  position: relative;
+  cursor: pointer;
+  margin: 5px 0px;
+}
+
+#qselectElem li:nth-child(2n+1){
+  background: rgba(60,60,60,0.3);
+}
+
+#qselectElem li:hover,#qselectElem li:nth-child(2n+1):hover{
+  background: rgba(66, 163, 209, 0.8);
+}
+
+#qselectElem li label{
+  background: rgba(132, 250, 54, 0.54);
+  height: 100%;  
+  padding: 15px;
+  display: inline-block;
+}
+
+#qselectElem li:nth-child(2n+3) label{
+  background: rgba(250, 28, 28, 0.79);
+}
+
+#qselectElem li:nth-child(3n+2) label{
+  background:rgba(250, 81, 28, 0.79);
+}
+
+#qselectElem li:nth-child(2n+2) label{
+  background: rgba(54, 148, 250, 0.82);
+}
+
+#qselectElem li:nth-child(4n+6) label{
+  background: rgba(132, 250, 54, 0.79);
+}
+
+#qselectElem li span{
+    display: inline-block;
+    margin-left: 5px;
+}
+
+#qselectElem li label.elemDestroy{
+  position: absolute;
+  top:0px;
+  right:0px;
+  background: none;
+  color: rgba(0,0,0,0.3);
+}
+
+#qselectElem li label.elemDestroy:hover{
+  background: rgba(250, 81, 28, 0.79);
+  color: rgba(255,255,255,0.9);
+}
+
+#qadder{
+  position: relative;
+  height: 55px;
+  margin-bottom: 20px;
+}
+
+#qadder .inputCover .dataInput{
+  position: absolute;
+  top:0px;
+  left:0px;
+  outline: none;
+  width: 100%;
+  height: 55px;
+  z-index:100;
+  padding:0px 3px;
+}
+
+#qadder #addSet{
+  font-size: 3em;
+  background: rgba(60,60,60,0.3);
+  width: 10%;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  right: 0px;
+  top:0px;
+  z-index:10000;
+  font-weight: bold;
+  line-height: 50px;
+  cursor:pointer;
+}
+
+#qadder #addSet:hover{
+  background: rgba(54, 148, 250, 0.82);
+  color: #fff;
+}
+
+.logoFrame{
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  vertical-align: middle;
+}
+
+#logoStand{
+  width: 250px;
+  height:250px;
+  top:10%;
+}
+

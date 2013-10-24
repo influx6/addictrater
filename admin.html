@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Addiction Review App</title>
+	<link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="./assets/css/fontface.css" />
+	<link rel="stylesheet" type="text/css" href="./assets/css/component.css"></script>
+	<link rel="stylesheet" type="text/css" href="./assets/css/colors.css" />
+	<link rel="stylesheet" type="text/css" href="./assets/css/grid.css" />
+	<link rel="stylesheet" type="text/css" href="./assets/css/layout.css" />
+	<link rel="stylesheet" type="text/css" href="./assets/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="./assets/css/admin.css"></script>
+	<script  src="./assets/js/jquery.js" type="text/javascript"></script>
+	<script  src="./assets/js/Chart.min.js" type="text/javascript"></script>
+	<script  src="./assets/js/ts.js" type="text/javascript"></script>
+	<script  src="./assets/js/init.js" type="text/javascript"></script>
+	<script  src="./assets/js/q.js" type="text/javascript"></script>
+	<script  src="./assets/js/app.js" type="text/javascript"></script>
+	<script  src="./assets/js/bar.js" type="text/javascript"></script>
+</head>
+<body>
+	<div id="admin" class="plane hide">
+		<div class="boundaryCover">
+			<div id="logoStand" class="centered">
+				<a href="./index.html">
+						<img src="./assets/images/headBig.png" class="logo" />
+				</a>
+			</div>
+			<div id='divCover' class="inputFormCover centered">
+				<label id="intro"> Please Enter the following details</label>
+				<form name="pinForm" id="pinForm" method='post' action="" remote=true >
+            		<div class="inputCover" id="inputCover" >
+            			<span id="placeholder" class="placeholder">Pin...</span>
+              			<input id="inputElem" class="dataInput" type="text" max=8 />
+              			<div id="pinsubmit" class="button addbutton">&raquo;</div>
+              		</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div id="qlist" class="plane">
+		<div id="selectListCover">
+			<div id="selectList">
+				<h1 id="logoCover">
+					<label class="logoFrame"><img src="./assets/images/head.png" class="logo" /></label>Question List
+				</h1>
+				<div id="qadder">
+            		<div class="inputCover" id="inputCover" >
+            			<span id="placeholder" class="placeholder">Enter New Question Set...</span>
+              			<input id="inputElem" class="dataInput" type="text" max=8 />
+              		</div>					
+              		<div id="addSet">+</div>
+				</div>
+				<div class="clear"></div>
+				<ul id="qselectElem">
+
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="wall" class='hide' >
+      <span id="close">Close</span>
+      <div id="panel">
+        <div id="case">
+            
+            <div id="addView" class="actionView hide">
+            	<h3>Add</h3>
+		          <p id="itemcase" class="question">
+		            <label>Question:</label>
+		            <input type='text'  />
+		          </p>
+		        <p id="itemcase">
+		            <label>Options:</label>
+		            <div class="addOption">
+		            	<div class="inputCover" >
+		            		<span class="placeholder">Question</span>
+		              		<input id="questionInput" type="text" />
+		              	</div>
+		              	<div class="inputCover" >
+		              		<span class="placeholder">Weight</span>
+		              		<input id="weightInput" type="text" />
+		              	</div>
+		        		<div id="addsubmit" class="button addbutton">Add</div>
+		            </div>
+		            <ul id="itemContent">
+
+		            </ul>
+		        </p>
+		        <p id="submit" class="button submitbutton">Submit</p>
+         	</div> 
+
+         	<div id="editView" class="actionView hide">
+         		<h3>Edit</h3>
+		 		<p id="itemcase" class="pid">
+		            <label>ID</label>
+		            <select id="idSelect">
+		              <option></option>
+		              <option>0</option>
+		              <option>1</option>
+		              <option>2</option>
+		              <option>3</option>
+		            </select>
+		            <label id="itemDelete">Delete</label>
+		        </p>
+            	<h3>Add</h3>
+		          <p id="itemcase" class="question">
+		            <label>Question:</label>
+		            <input type='text'  />
+		          </p>
+		        <p id="itemcase">
+		            <label>Options:</label>
+		            <div class="addOption">
+		            	<div class="inputCover" >
+		            		<span class="placeholder">Question</span>
+		              		<input id="questionInput" type="text" />
+		              	</div>
+		              	<div class="inputCover" >
+		              		<span class="placeholder">Weight</span>
+		              		<input id="weightInput" type="text" />
+		              	</div>
+		        		<div id="addsubmit" class="button addbutton">Add</div>
+		            </div>
+		            <ul id="itemContent">
+
+		            </ul>
+		        </p>
+		        <p id="submit" class="button submitbutton">Submit</p>
+         	</div>
+
+        </div>
+      </div>
+    </div>
+	<div id="coverwrap" class="cover grid96">
+		<header id="menu" class='full'>
+			<h1 id="logoCover">
+				<a href="./index.html">
+					<label class="logoFrame">
+						<img src="./assets/images/head.png" class="logo" />
+					</label>SanityChecker
+				</a>
+			</h1>
+			<nav id="menulinks">
+				<ul>
+					<li><a id="add" href="#">Add</a></li>
+					<li><a id="edit" href="#">Edit</a></li>
+					<li><a id="export" href="#">Export</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div id="content" class='full'>
+			<section id="graph" class="full">
+				<h1 id="gengraph">Generate Graph</h1>
+				<div id="graphview" class="hide">
+					<ul id='graphmenu'>
+						<li id="hidegraph">Hide Graph</li>
+					</ul>
+					<canvas id="sanityGraph" width='700' height='420'></canvas>
+				</div>
+			</section>
+
+			<section id="qp" class="box1-8">
+				
+			</section>
+
+		</div>
+	</div>
+	<template class="ghost" id="item_template">
+		<article id="{{number}}" class="qo">
+			<div id="pos" class="{{color}}">{{number}}</div>
+			<article id="ask">{{question}}</article>	
+			<ul id="options">
+			</ul>
+		</article>
+	</template>
+	<template class="ghost" id="option_template">
+		<li>
+			<input type='radio' name="qo{{type}}" />
+			<span weight="{{weight}}">{{data}}</span>			
+		</li> 		
+	</template>
+	<template class="ghost" id="list_template">
+        <li>
+	        <section class="data">
+	            <em class="dataFace" weight='{{weight}}'>{{data}}</em>
+	            <div class="inputCover hide" >
+	              	<input  type="text" />
+	              	<span class="button okbutton">OK</span>
+	            </div>
+	            <span id="destroyButton" class="button destroyButton">X</span>
+	        </section>
+	    </li>
+	</template>
+	<templace class="ghost" id="select_template">
+		<li id="{{name}}" class="qlistElem">
+			<label>Questions on </label><span>{{topic}}</span><label class="elemDestroy">X</label>
+		</li>
+	</template>
+</body>
+<script id='secretData' src="./assets/js/secret.js" ></script>
+</html>

@@ -1,0 +1,122 @@
+    <div id="wall" class='hide' >
+      <span id="close">Close</span>
+      <div id="panel">
+        <div id="case">
+            
+            <div id="addView" class="hide">
+            	<h3>Add</h3>
+		          <p id="itemcase" class="question">
+		            <label>Question</label>
+		            <input type='text'  />
+		          </p>
+		        <p id="itemcase">
+		            <label>Options</label>
+		            <div class="addOption">
+		            	<div class="inputCover" >
+		            		<span class="placeholder">Question</span>
+		              		<input id="questionInput" type="text" />
+		              	</div>
+		              	<div class="inputCover" >
+		              		<span class="placeholder">Weight</span>
+		              		<input id="weightInput" type="text" />
+		              	</div>
+		        		<p id="addsubmit" class="button addbutton">Add</p>
+		            </div>
+		            <ul id="itemContent">
+
+		            </ul>
+		        </p>
+		        <p id="submit" class="button submitbutton">Submit</p>
+         	</div> 
+
+         	<div id="editView" class="hide">
+         		<h3>Edit</h3>
+		 		<p id="itemcase" class="pid">
+		            <label>ID</label>
+		            <select id="idSelect">
+		              <option></option>
+		              <option>0</option>
+		              <option>1</option>
+		              <option>2</option>
+		              <option>3</option>
+		            </select>
+		            <label id="itemDelete">Delete</label>
+		        </p>
+            	<h3>Add</h3>
+		          <p id="itemcase" class="question">
+		            <label>Question</label>
+		            <input type='text'  />
+		          </p>
+		        <p id="itemcase">
+		            <label>Options</label>
+		            <div class="addOption">
+		            	<div class="inputCover" >
+		            		<span class="placeholder">Question</span>
+		              		<input id="questionInput" type="text" />
+		              	</div>
+		              	<div class="inputCover" >
+		              		<span class="placeholder">Weight</span>
+		              		<input id="weightInput" type="text" />
+		              	</div>
+		        		<p id="addsubmit" class="button addbutton">Add</p>
+		            </div>
+		            <ul id="itemContent">
+
+		            </ul>
+		        </p>
+		        <p id="submit" class="button submitbutton">Submit</p>
+         	</div>
+
+        </div>
+      </div>
+    </div>
+	<div id="coverwrap" class="cover grid96">
+		<header id="menu" class='full'>
+			<h1 id="logo"><a href="./index.html"><span>Addiction</span>Ranger</a></h1>
+			<nav id="menulinks">
+				<ul>
+					<li><a id="add" href="#">Add</a></li>
+					<li><a id="edit" href="#">Edit</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div id="content" class='full'>
+			<section id="graph" class="box1-7">
+				<h1 id="gengraph">Generate Graph</h1>
+				<div id="graphview"></div>
+			</section>
+			<section id="qp" class="box1-8">
+				
+			</section>
+
+		</div>
+	</div>
+	<template class="ghost" id="item_template">
+		<article id="{{number}}" class="qo">
+			<div id="pos" class="{{color}}">{{number}}</div>
+			<article id="ask">{{question}}</article>	
+			<ul id="options">
+			</ul>
+		</article>
+	</template>
+	<template class="ghost" id="option_template">
+		<li>
+			<label>
+				<input name="qo{{type}}" type='radio'/>
+				<em weight="{{weight}}">{{data}}</em>
+			</label>
+		</li> 		
+	</template>
+	<template class="ghost" id="list_template">
+        <li>
+	        <section class="data">
+	            <em class="dataFace" weight='{{weight}}'>{{data}}</em>
+	            <div class="inputCover hide" >
+	              	<input  type="text" />
+	              	<span class="button okbutton">OK</span>
+	            </div>
+	            <span class="button destroyButton">X</span>
+	        </section>
+	    </li>
+	</template>
+	

@@ -109,7 +109,7 @@ $(function(){
 
      		list.append(code);
      		selectDB['#'+input.val()] = input.val();
-     		localStorage['selectDB'] = JSON.stringify(selectDB);
+     		localStorage['selectList'] = JSON.stringify(selectDB);
      	});     	
      };
      

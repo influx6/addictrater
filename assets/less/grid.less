@@ -1,0 +1,107 @@
+@gutter: 20;
+@res: 1200px;
+@width: 60px;
+
+.selfExpand{
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+}
+
+.widthRel(@x,@d,@pr:100%,@pad:20){
+    width: ((@x/@d) * @pr);
+}
+
+.gridCalculator(@w,@cols,@g:20){
+    
+    @dfwidth: @w/@cols;
+
+    .selfExpand;
+
+    .full{  
+        width: 100%;
+    }
+
+    .half{
+        width: 50%;
+    }
+
+    .box{
+        .widthRel(@dfwidth,@w);
+    }
+
+    .box1-2{
+        .widthRel(@dfwidth*2,@w);
+    }
+
+    .box1-3{
+        .widthRel(@dfwidth*3,@w);
+    }
+
+    .box1-4{
+        .widthRel(@dfwidth*4,@w);
+    }
+
+    .box1-5{
+        .widthRel(@dfwidth*5,@w);
+    }
+
+    .box1-6{
+        .widthRel(@dfwidth*6,@w);
+    }
+
+
+    .box1-7{
+        .widthRel(@dfwidth*7,@w);
+    }
+
+
+    .box1-8{
+        .widthRel(@dfwidth*8,@w);
+    }
+
+    .box1-9{
+        .widthRel(@dfwidth*9,@w);
+    }
+
+    .box1-10{
+        .widthRel(@dfwidth*10,@w);
+    }
+
+    .box1-11{
+        .widthRel(@dfwidth*11,@w);
+    }
+
+    .box1-12{
+        .widthRel(@dfwidth*12,@w);
+    }
+
+    .box1-13{
+        .widthRel(@dfwidth*13,@w);
+    }
+
+    .box1-14{
+        .widthRel(@dfwidth*14,@w);
+    }
+
+    .box1-15{
+        .widthRel(@dfwidth*15,@w);
+    }
+
+    .box1-16{
+        .widthRel(@dfwidth*16,@w);
+    }
+	
+}
+
+/* this is a 1200grid from the grid calculator */
+.grid12{
+    .gridCalculator(1200,12,20);
+}
+
+
+/* a 960px grid */
+.grid96{
+	.gridCalculator(960,8,20);
+}
